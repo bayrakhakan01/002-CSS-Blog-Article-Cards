@@ -1,0 +1,187 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-link: #4d97b2;
+    --clr-popular: #ef257a;
+    --clr-technology: #651fff;
+    --clr-psychology: #e85808;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#757c77;
+}
+nav, header{  
+    box-shadow: 0px 2px 10px var(--clr-gray-light); 
+    margin: 0;
+    margin-bottom: 1px;
+    padding: 0;
+    background:#666b6a;
+    overflow: hidden;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    
+}
+
+.header {
+    border-radius: 0.5rem;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0px 2px 10px var(--clr-gray-light); 
+    
+    padding: 0.2rem 0.3rem;
+}
+.header:hover {
+    transform:scale(1.05);
+    box-shadow: 0px 20px 40px 5px var(--clr-gray-light);
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    float: right;
+    border-right:1px solid #bbb;
+    
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+   text-align: center;
+}
+
+li a:hover {
+    transform:scale(1.05);
+    box-shadow: 5px 20px 40px 5px #111;
+    cursor: pointer;
+}
+
+body {
+    margin: 2rem;
+    color: var(--clr-gray-dark);
+}
+
+.wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     
+}
+.card {
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray-light);
+    background: white;
+    border-radius: 0.5rem;
+    position: relative;
+    width: 350px;
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px var(--clr-gray-light)
+}
+.card-profile:hover {
+    background-color: #1bc58c;
+    border-radius: 60%;
+    color: white;
+
+}
+.banner-img {
+    position: absolute;
+    object-fit: cover;
+    height: 14rem;
+    width: 100%;    
+}
+
+.category-tag {
+font-size: 0.8rem;
+font-weight: bold;
+color: white;
+background :red;
+padding: 0.5rem 1.3rem 0.5rem 1rem;
+text-transform: uppercase;
+position: absolute;
+z-index: 1;
+top: 1rem;
+border-radius: 0 2rem 2rem 0;
+}
+
+.popular {
+    background-color: var(--clr-popular);
+}
+
+.technology {
+    background-color: var(--clr-technology);
+}
+.psychology {
+    background-color: var(--clr-psychology);
+}
+
+.card-body {
+    margin: 15rem 1rem 1rem 1rem;
+}
+
+.blog-hashtag {
+    font-size:0.9rem;
+    font-weight: 500;
+    color: var(--clr-link);
+}
+
+.blog-title {
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.blog-description {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+}
+
+.card-profile{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-profile-info {
+    margin-left: 1rem;
+}
+
+.profile-name {
+    font-size: 1rem;
+}
+
+.profile-followers {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+}
+  
